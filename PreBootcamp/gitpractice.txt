@@ -1,0 +1,19 @@
+cd Desktop
+md gittest
+cd gittest
+git init
+copy NUL index.html
+copy NUL styles.css
+copy NUL aboutMe.txt
+git add .
+git commit -m "added index.html, styles.css and aboutMe.txt files"
+git add aboutMe.txt
+atom .
+git commit -m "updated aboutMe"
+git add aboutMe.txt
+git commit -m "added favorite movie to aboutMe"
+git log
+git revert -n 915af32
+git commit -m "revert 915af32"
+git add aboutMe.txt
+git commit -m "added favorite book to aboutMe"
