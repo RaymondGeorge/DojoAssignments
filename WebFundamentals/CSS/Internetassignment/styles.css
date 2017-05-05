@@ -1,0 +1,199 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+#container{
+  width: 970px;
+  margin: 0 auto;
+}
+
+header img{
+  position: absolute;
+  left: 465px;
+  top: 16px;
+  z-index: +1;
+}
+
+header h1{
+  padding: 45px 0 15px 100px;
+}
+
+header span{
+  color: blue;
+}
+
+header h2{
+  background: linear-gradient(rgba(8, 64, 148, 0.69), #7b9fd0, rgba(8, 64, 148, 0.69));
+  padding: 15px 0 15px 10px;
+  color: white;
+}
+
+#leftpanel{
+  display: inline-block;
+  width: 150px;
+  padding-left: 2px;
+  padding-top: 15px;
+}
+
+h5 span{
+  color: red;
+}
+
+h6 span{
+  color: blue;
+}
+
+#topleftcontent{
+  border-bottom: 1px solid grey;
+}
+
+#topleftcontent a{
+  color: white;
+  border-radius: 3px;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.watch{
+  background-color: #7b9fd0;
+  text-align: center;
+  padding: 5px 0 5px;
+  margin-bottom: 4px;
+  box-shadow: 2px 2px grey;
+}
+
+.resources{
+  background-color: orange;
+  text-align: center;
+  padding: 5px 0 5px;
+  margin-bottom: 25px;
+  box-shadow: 2px 2px grey;
+}
+
+#bottomleftcontent{
+  background-image: url(./ad_background.png);
+  margin-top: 30px;
+  padding-bottom: 15px;
+}
+
+#bottomleftcontent h3{
+  color: white;
+  text-align: center;
+  padding: 15px 10px 0;
+}
+
+#bottomleftcontent img{
+  display: block;
+  margin: 0 auto;
+}
+
+#bottomleftcontent a{
+  display: block;
+  margin: 0 10px 15px;
+  background-color: lightblue;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 12px;
+}
+
+#maincontent{
+  display: inline-block;
+  width: 750px;
+  vertical-align: top;
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+#maincontent h4{
+  color: blue;
+}
+
+#maincontent a{
+  color: lightblue;
+  text-decoration: none;
+}
+
+#maincontent li{
+  margin-left: 35px;
+}
+
+#home_contact{
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+#home_dns{
+  width: 460px;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+#home_dns a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#home_dns h5{
+  display: inline-block;
+  vertical-align: inherit;
+}
+
+#contactinfo{
+  width: 185px;
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 100px;
+  vertical-align: top;
+}
+
+#contactinfo a{
+  text-decoration: none;
+  color: lightblue;
+  font-size: 20px;
+}
+
+#phonenumber{
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+#clients{
+  padding: 15px 0 15px;
+}
+
+#clients span{
+  font-weight: bold;
+}
+
+#clients img{
+  display: block;
+  margin: 0 auto;
+}
+
+footer{
+  border-top: 5px solid blue;
+  border-right: 5px solid blue;
+  border-left: 5px solid blue;
+  padding: 10px;
+}
+
+footer img{
+  display: inline-block;
+}
+
+#footer_content{
+  display: inline-block;
+  vertical-align: top;
+  width: 540px;
+  margin-left: 15px;
+}
+
+#footer_content span{
+  font-style: italic;
+}

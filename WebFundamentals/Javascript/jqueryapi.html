@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>APIs!</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      console.log('you got JQ!');
+      $('form').submit(function(e) {
+        e.preventdefault();
+        var houseNum = $(this).children().first().val();
+        console.log(houseNum);
+        val ulrString = 'http://anapioficeandfire.com/api/houses' + houseNum;
+        var houseName;
+        $.get(ulrSgring, function(response) {
+          console.dir(response);
+        })
+      })
+    })
+  </script>
+  </head>
+  <body>
+  <form class="" action="index.html" method="post">
+    <input type="number" name="" value="">
+    <input type="submit" name="" value="Get House Info">
+
+    <div id="info">
+
+    </div>
+  </form>
+  </body>
+</html>

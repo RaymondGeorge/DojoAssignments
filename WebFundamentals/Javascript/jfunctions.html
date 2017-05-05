@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Functions</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      console.log('you got JQ!');
+      $('#addclassbutton').click(function() {
+        $('#addclass').addClass("red");
+      })
+      $('#slidetogglebutton').click(function() {
+        $('#slidetoggle').slideToggle("slow", function() {
+        });
+      })
+      $('#appendbutton').click(function() {
+        $('#append').append("<p>Test</p>");
+      })
+      $('#hidebutton').click(function() {
+        $('#hide').hide();
+      })
+      $('#showbutton').click(function() {
+        $('#hide').show();
+      })
+      $('#togglebutton').click(function() {
+        $('#toggle').toggle();
+      })
+      $('#slideupbutton').click(function() {
+        $('#slide').slideUp();
+      })
+      $('#slidedownbutton').click(function() {
+        $('#slide').slideDown();
+      })
+      $('#fadeoutbutton').click(function() {
+        $('#fade').fadeOut();
+      })
+      $('#fadeinbutton').click(function() {
+        $('#fade').fadeIn();
+      })
+    })
+      </script>
+  </head>
+  <body>
+    <div>
+      <h1>AddClass</h1>
+      <button type="button" id="addclassbutton">AddClass</button>
+      <p id="addclass">Click the button to add class 'red' to this paragraph.</p>
+    </div>
+
+    <div>
+      <h1>Slidetoggle</h1>
+      <button type="button" id="slidetogglebutton">Slidetoggle</button>
+      <p id="slidetoggle">Click the button to slidetoggle a hidden image</p>
+    </div>
+
+    <div id="append">
+      <h1>Append</h1>
+      <button type="button" id="appendbutton">Append</button>
+      <p>Click the button to append a new paragraph</p>
+    </div>
+
+    <div>
+      <h1>Hide</h1>
+      <button type="button" id="hidebutton">Hide</button>
+      <p id="hide">Click the button to hide this paragraph</p>
+      <button type="button" id="showbutton">Show</button>
+      <p>Click the button to show the paragraph</p>
+    </div>
+
+    <div>
+      <h1>Toggle</h1>
+      <button type="button" id="togglebutton">Toggle</button>
+      <p id="toggle">click the button to toggle</p>
+    </div>
+
+    <div>
+      <h1>Slide</h1>
+      <button type="button" id="slideupbutton">slideUp</button>
+      <p id="slide">click the button to slide up</p>
+      <button type="button" id="slidedownbutton">slideDown</button>
+      <p>click the button to slide down</p>
+    </div>
+
+    <div>
+      <h1>Fade</h1>
+      <button type="button" id="fadeoutbutton">fadeOut</button>
+      <p id="fade">click the button to fade out this paragraph</p>
+      <button type="button" id="fadeinbutton">fadeIn</button>
+      <p>click the button to fade in the paragraph above</p>
+    </div>
+
+  </body>
+</html>

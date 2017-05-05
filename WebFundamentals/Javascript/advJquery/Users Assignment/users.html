@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+  		$(document).ready(function() {
+  			console.log('you got jq');
+        $(document).on('click', 'button', function(){
+          var valuefirst = $('#first_name').val();
+          var valuelast = $('#last_name').val();
+          var valueemail = $('#email_').val();
+          var valuephone = $('#phone_').val();
+          $('#tablefirst').html(valuefirst);
+          $('#tablelast').html(valuelast);
+          $('#tableemail').html(valueemail);
+          $('#tablephone').html(valuephone);
+        });
+  	});
+  	</script>
+  </head>
+  <body>
+    <div id="contact">
+      <table>
+        <thead>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Address</th>
+          <th>Contact #</th>
+        </thead>
+        <td id='tablefirst'></td>
+        <td id='tablelast'></td>
+        <td id='tableemail'></td>
+        <td id='tablephone'></td>
+      </table>
+    </div>
+    <div id="entryform">
+      <h1>Add User</h1>
+      <form>
+        First Name: <input id="first_name" type="text" name="firstname" value="First Name">
+        <br>
+        Last Name: <input id="last_name" type="text" name="lastname" value="Last Name">
+        <br>
+        Email Address: <input id="email_" type="text" name="email" value="Email Address">
+        <br>
+        Contact No.: <input id="phone_" type="text" name="phonenumber" value="Phone #">
+      </form>
+      <button type="button" name="button">Add User</button>
+    </div>
+  </body>
+</html>

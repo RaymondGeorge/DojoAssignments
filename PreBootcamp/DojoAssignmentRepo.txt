@@ -1,0 +1,13 @@
+cd Desktop
+cd DojoAssignments
+git init
+git add .
+git commit -m "added git repository"
+git remote add origin https://github.com/RaymondGeorge/DojoAssignments.git
+git push -u origin master
+copy NUL readme.md
+atom .
+git status
+git add readme.md
+git commit -m "added readme file"
+git push -u origin master

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja to Cat</title>
+    <link rel="stylesheet" href="./ninjacat.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      console.log('you got JQ!');
+      $('img').click(function() {
+        console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+      })
+      $('#pic0').click(function() {
+        $('#pic0').html('<img src="./ninja0.png" data-alt-src="./cat0.png" alt="ninja0">');
+      })
+      $('#pic1').click(function() {
+        $('#pic1').html('<img src="./ninja1.png" data-alt-src="./cat1.png" alt="ninja1">');
+      })
+      $('#pic2').click(function() {
+        $('#pic2').html('<img src="./cat2.png" data-alt-src="./ninja2.png" alt="cat2">');
+      })
+      $('#pic3').click(function() {
+        $('#pic3').html('<img src="./cat3.png" data-alt-src="./ninja3.png" alt="cat3">');
+      })
+      $('#pic4').click(function() {
+        $('#pic4').html('<img src="./cat4.png" data-alt-src="./ninja4.png" alt="cat4">');
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <div id="pic0">
+      <img src="./cat0.png" data-alt-src="./ninja0.png" alt="cat0">
+    </div>
+
+    <div id="pic1">
+      <img src="./cat1.png" data-alt-src="./ninja1.png" alt="cat1">
+    </div>
+
+    <div id="pic2">
+      <img src="./ninja2.png" data-alt-src="./cat2.png" alt="ninja2">
+    </div>
+
+    <div id="pic3">
+      <img src="./ninja3.png" data-alt-src="./cat3.png" alt="ninja3">
+    </div>
+
+    <div id="pic4">
+      <img src="./ninja4.png" data-alt-src="./cat4.png" alt="ninja4">
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,92 @@
+h1{
+  display: inline;
+  font-family: cursive;
+}
+
+h2{
+  display: inline;
+  margin-left: 350px;
+}
+
+header{
+  margin-bottom: 10px;
+}
+
+.container{
+  background: radial-gradient(rgba(48, 34, 72, 0.51), #3a2b54);
+  padding: 10px 25px;
+  width: 920px;
+}
+
+.main_content{
+  margin: 15px auto 15px;
+  height: 600px;
+}
+
+.selfie{
+  display: inline-block;
+  border-style: solid;
+  border: 10px 10px 10px;
+  border-color: lightgrey;
+}
+
+.about{
+  display: inline-block;
+  width: 425px;
+  margin-left: 40px;
+  background: linear-gradient(to right, white, rgba(40, 30, 45, 0.51));
+  vertical-align: top;
+}
+
+.lamode{
+  display: inline-block;
+  width: 290px;
+  height: inherit;
+  vertical-align: top;
+  background: linear-gradient(to right, white, rgba(40, 30, 45, 0.51));
+}
+
+.familycontacts{
+  display: inline-block;
+  width: 290px;
+  height: inherit;
+  vertical-align: top;
+  margin-left: 15px;
+  background: linear-gradient(to right, white, rgba(40, 30, 45, 0.51));
+}
+
+.fiveeleven{
+  display: inline-block;
+  width: 290px;
+  height: inherit;
+  vertical-align: top;
+  margin-left: 15px;
+  background: linear-gradient(to right, white, rgba(40, 30, 45, 0.51));
+}
+
+h3, h4{
+  background: linear-gradient(lightgrey, grey, lightgrey);
+  color: white;
+  padding: 5px 0 5px 5px;
+  margin-top: 0;
+}
+
+.contactinfo{
+  margin-left: 335px;
+}
+
+.links{
+  margin-left: 300px;
+}
+
+a{
+  color: black;
+}
+
+button{
+  margin-left: 100px;
+  margin-bottom: 10px;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+  		$(document).ready(function() {
+  			console.log('you got jq');
+      })
+      $(document).on('click', '.btn', function(){
+        $('#container').append('<div id="card"> <h2></h2> <a href="#">Click for description!</a></div>');
+        var valuefirst = $('#first_name').val();
+        var valuelast = $('#last_name').val();
+        var valuedescrip = $('#description').val();
+        $('#card h2').html(valuefirst + " " + valuelast);
+        $(document).on('click', 'a', function() {
+          $('#card').html(valuedescrip);
+        })
+      })
+  	</script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="entryform">
+        <h1>Add Contact</h1>
+        <form>
+          First Name: <input id="first_name" type="text" name="firstname" value="First Name">
+          <br>
+          Last Name: <input id="last_name" type="text" name="lastname" value="Last Name">
+          <br>
+          Description:
+          <br>
+          <input id="description" type="text" name="email" value="Enter Description">
+        </form>
+        <button class="btn" type="button" name="button">Add User</button>
+      </div>
+    </div>
+  </body>
+</html>
